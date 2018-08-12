@@ -353,7 +353,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &553887180
 Prefab:
@@ -392,7 +392,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4855647895157198, guid: f26ec63276e3f11449e43ab8c0a6b6d5, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f26ec63276e3f11449e43ab8c0a6b6d5, type: 2}
@@ -441,6 +441,43 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 65564954974092478, guid: 303f8645e9190a64bb030fb6ce9539d6,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 2.065322
+      objectReference: {fileID: 0}
+    - target: {fileID: 65564954974092478, guid: 303f8645e9190a64bb030fb6ce9539d6,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0.038909435
+      objectReference: {fileID: 0}
+    - target: {fileID: 65564954974092478, guid: 303f8645e9190a64bb030fb6ce9539d6,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 4.1007657
+      objectReference: {fileID: 0}
+    - target: {fileID: 65564954974092478, guid: 303f8645e9190a64bb030fb6ce9539d6,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.0040795803
+      objectReference: {fileID: 0}
+    - target: {fileID: 65564954974092478, guid: 303f8645e9190a64bb030fb6ce9539d6,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 3.895649
+      objectReference: {fileID: 0}
+    - target: {fileID: 65564954974092478, guid: 303f8645e9190a64bb030fb6ce9539d6,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.050801277
+      objectReference: {fileID: 0}
+    - target: {fileID: 114593855648626886, guid: 303f8645e9190a64bb030fb6ce9539d6,
+        type: 2}
+      propertyPath: createOnDestroy
+      value: 
+      objectReference: {fileID: 1971424577537738, guid: 3633570e537bd4c4aaedd0b3864e83c5,
+        type: 2}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 303f8645e9190a64bb030fb6ce9539d6, type: 2}
   m_IsPrefabParent: 0
