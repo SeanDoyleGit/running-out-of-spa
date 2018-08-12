@@ -601,7 +601,7 @@ Prefab:
     - target: {fileID: 114607613754053832, guid: f26ec63276e3f11449e43ab8c0a6b6d5,
         type: 2}
       propertyPath: minSpeed
-      value: 25
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65737989675956728, guid: f26ec63276e3f11449e43ab8c0a6b6d5, type: 2}
@@ -1238,8 +1238,8 @@ MonoBehaviour:
   Enemy: {fileID: 1962898207941944, guid: 303f8645e9190a64bb030fb6ce9539d6, type: 2}
   secondsPerSpawn: 3
   spawnIncreaseRate: 0.9
-  minSpawnDistance: 30
-  maxSpawnDistance: 150
+  minSpawnDistance: 50
+  maxSpawnDistance: 125
 --- !u!114 &1808675896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1261,7 +1261,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 400, y: 12, z: 400}
+  m_Size: {x: 300, y: 12, z: 300}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1808675898
 Rigidbody:

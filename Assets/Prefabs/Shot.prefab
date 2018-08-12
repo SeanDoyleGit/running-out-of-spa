@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 136346847349158782}
   m_Layer: 0
   m_Name: Shot
-  m_TagString: Untagged
+  m_TagString: Shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  targetTag: Enemy
 --- !u!136 &136346847349158782
 CapsuleCollider:
   m_ObjectHideFlags: 1

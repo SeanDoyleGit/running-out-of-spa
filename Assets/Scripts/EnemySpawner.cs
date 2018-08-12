@@ -10,6 +10,7 @@ public class EnemySpawner : MonoBehaviour {
 	public float minSpawnDistance = 30.0f;
 	public float maxSpawnDistance = 100.0f;
 
+	GameObject player;
 	float currentSecondsPerSpawn;
 	float timeSinceLastSpawn = 0;
 
@@ -28,16 +29,24 @@ public class EnemySpawner : MonoBehaviour {
 	}
 
 	public void SpawnEnemy() {
-		Vector3 randPos = Random.insideUnitCircle  * (maxSpawnDistance - minSpawnDistance);
-		randPos = new Vector3(randPos.x + Mathf.Sign(randPos.x) * minSpawnDistance, 0, randPos.y + Mathf.Sign(randPos.y) * minSpawnDistance);
-		randPos.x += transform.position.x;
-		randPos.z += transform.position.z;
+		Vector3 fwd = player.transform.forward.normalized;
+		Vector3 randPos = fwd * (maxSpawnDistance - minSpawnDistance) + fwd * minSpawnDistance;
 
-		Instantiate(Enemy, randPos, Quaternion.Euler(0,0,0));
+		randPos = RotateVector2D(randPos, Random.Range(-75f, 75f));
+
+		Instantiate(Enemy, transform.position + randPos, Quaternion.Euler(0,0,0));
 	}
 	
     IEnumerator IncreaseDifficulty() {
         yield return new WaitForSeconds(5);
         currentSecondsPerSpawn *= spawnIncreaseRate;
     }
+
+	private Vector3 RotateVector2D(Vector3 oldDirection, float angle)   
+	{
+		float newX = Mathf.Cos(angle*Mathf.Deg2Rad) * (oldDirection.x) - Mathf.Sin(angle*Mathf.Deg2Rad) * (oldDirection.z);   
+		float newY = oldDirection.y;
+		float newZ = Mathf.Sin(angle*Mathf.Deg2Rad) * (oldDirection.x) + Mathf.Cos(angle*Mathf.Deg2Rad) * (oldDirection.z);  
+		return new Vector3(newX, newY, newZ);   
+	}
 }

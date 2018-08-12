@@ -20,6 +20,8 @@ public class ProceduralEnemyLocations : MonoBehaviour {
 		if(other.gameObject.tag.Equals("Enemy") && other.isTrigger) { 
 			Destroy(other.gameObject); 
 			enemySpawner.SpawnEnemy();
+		} else if(other.gameObject.tag.Equals("Shot")) { 
+			Destroy(other.gameObject); 
 		}
 	}
 }
