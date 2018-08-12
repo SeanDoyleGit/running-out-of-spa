@@ -17,10 +17,13 @@ public class HealthController : MonoBehaviour {
 	public void Damage(float damage) {
 		currentHealth -= damage;
 		if(currentHealth <= 0) {
-			if(createOnDestroy != null) {
-				Instantiate(createOnDestroy, transform.position, Quaternion.Euler(0,0,0));
-			}
 			Destroy(gameObject);
+		}
+	}
+
+	void OnDestroy() {
+		if(createOnDestroy != null) {
+			Instantiate(createOnDestroy, transform.position, Quaternion.Euler(0,0,0));
 		}
 	}
 }
