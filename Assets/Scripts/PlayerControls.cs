@@ -12,6 +12,8 @@ public class PlayerControls : MonoBehaviour {
 	public float maxRoll = 60f;
 	public float rollModifier = 2f;
 
+	public GameObject Replay;
+
 	Rigidbody rigidbody;
 	int spaceLayer;
 	float camRayLength = 100f; 
@@ -62,5 +64,9 @@ public class PlayerControls : MonoBehaviour {
 		} else {
 			rigidbody.velocity = transform.forward.normalized * rigidbody.velocity.magnitude;
 		}
+	}
+
+	void OnDestroy() {
+		Instantiate(Replay, transform.position, Quaternion.Euler(0,0,0));
 	}
 }
