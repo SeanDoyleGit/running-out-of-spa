@@ -236,7 +236,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 84
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!65 &65500582803529288
 BoxCollider:
@@ -302,10 +302,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8eee2901473fe34791189b0644f67c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
+  maxSpeed: 15
   minSpeed: 5
   acceleration: 15
-  agroDistance: 30
+  agroDistance: 40
   MaxRotSpeed: 40
   MinRotSpeed: 1
 --- !u!114 &114199157870246008
