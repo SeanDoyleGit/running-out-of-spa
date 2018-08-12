@@ -685,7 +685,7 @@ Prefab:
     - target: {fileID: 114746122833986040, guid: f26ec63276e3f11449e43ab8c0a6b6d5,
         type: 2}
       propertyPath: initialHealth
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114607613754053832, guid: f26ec63276e3f11449e43ab8c0a6b6d5,
         type: 2}
@@ -1637,7 +1637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 1962898207941944, guid: 303f8645e9190a64bb030fb6ce9539d6, type: 2}
-  secondsPerSpawn: 3
+  secondsPerSpawn: 2
   spawnIncreaseRate: 0.9
   minSpawnDistance: 50
   maxSpawnDistance: 125
