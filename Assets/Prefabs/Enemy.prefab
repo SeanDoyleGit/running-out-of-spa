@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 10
-  minSpeed: 2
+  minSpeed: 5
   acceleration: 15
   agroDistance: 30
   MaxRotSpeed: 40
@@ -333,4 +333,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialHealth: 5
   createOnDestroy: {fileID: 1971424577537738, guid: 3633570e537bd4c4aaedd0b3864e83c5,
+    type: 2}
+  createOnHit: {fileID: 1488951676991172, guid: e9a2f834d90ca9b4b9d0c328c8ec1f35,
     type: 2}

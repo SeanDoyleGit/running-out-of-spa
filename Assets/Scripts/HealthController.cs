@@ -6,6 +6,7 @@ public class HealthController : MonoBehaviour {
 
 	public float initialHealth = 1f;
 	public GameObject createOnDestroy;
+	public GameObject createOnHit;
 
 	float currentHealth;
 
@@ -18,6 +19,8 @@ public class HealthController : MonoBehaviour {
 		currentHealth -= damage;
 		if(currentHealth <= 0) {
 			Destroy(gameObject);
+		} else {
+			Instantiate(createOnHit, transform.position, Quaternion.Euler(0,0,0));
 		}
 	}
 

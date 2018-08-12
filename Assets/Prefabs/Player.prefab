@@ -621,6 +621,8 @@ MonoBehaviour:
   initialHealth: 20
   createOnDestroy: {fileID: 1615575895309714, guid: 0a7d128e525be8c44994a8d15a983e60,
     type: 2}
+  createOnHit: {fileID: 1973422284561954, guid: ea989baf7032e8049820c06ea38ee3e0,
+    type: 2}
 --- !u!114 &114881739320491556
 MonoBehaviour:
   m_ObjectHideFlags: 1
