@@ -594,7 +594,7 @@ MonoBehaviour:
   rollSpeed: 0.05
   maxRoll: 60
   rollModifier: 2
-  Replay: {fileID: 1771294550576986, guid: 194e5b5b56caa4d4490e8b397539ae37, type: 2}
+  Replay: {fileID: 1826283440908228, guid: 194e5b5b56caa4d4490e8b397539ae37, type: 2}
 --- !u!114 &114746122833986040
 MonoBehaviour:
   m_ObjectHideFlags: 1
