@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 65737989675956728}
   - component: {fileID: 65638054611592030}
   - component: {fileID: 65437305055243558}
+  - component: {fileID: 114920016921889790}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -617,7 +618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 589a008fafb0e3b4696c48cd9b52ca0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialHealth: 1
+  initialHealth: 20
   createOnDestroy: {fileID: 1615575895309714, guid: 0a7d128e525be8c44994a8d15a983e60,
     type: 2}
 --- !u!114 &114881739320491556
@@ -633,6 +634,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shot: {fileID: 1028781505639432, guid: 66aa5b5cd55edb349804dd3df3528d40, type: 2}
   shotSpeed: 100
+--- !u!114 &114920016921889790
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1387532210930760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d48c855603a774197c458feaddcbea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198314115442733606
 ParticleSystem:
   m_ObjectHideFlags: 1

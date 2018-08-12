@@ -74,6 +74,8 @@ GameObject:
   - component: {fileID: 65564954974092478}
   - component: {fileID: 114593855648626886}
   - component: {fileID: 114199157870246008}
+  - component: {fileID: 65500582803529288}
+  - component: {fileID: 114020261589482714}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -233,8 +235,20 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!65 &65500582803529288
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962898207941944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.1007657, y: 2.065322, z: 3.895649}
+  m_Center: {x: -0.0040795803, y: 0.038909435, z: 0.050801277}
 --- !u!65 &65564954974092478
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -265,6 +279,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114020261589482714
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962898207941944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07d48c855603a774197c458feaddcbea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114042077236503020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -279,7 +304,7 @@ MonoBehaviour:
   maxSpeed: 10
   minSpeed: 2
   acceleration: 15
-  agroDistance: 25
+  agroDistance: 30
   MaxRotSpeed: 40
   MinRotSpeed: 1
 --- !u!114 &114199157870246008

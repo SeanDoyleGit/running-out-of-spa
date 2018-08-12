@@ -22,6 +22,10 @@ public class Enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(!player) { 
+			Destroy(gameObject); 
+			return;
+		}
 		float rotSpeed = MaxRotSpeed/Vector3.Distance(transform.position, player.transform.position);
 		rotSpeed = Mathf.Clamp(rotSpeed, MinRotSpeed, MaxRotSpeed);
 		transform.Rotate(0, rotSpeed, 0);

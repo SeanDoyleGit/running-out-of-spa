@@ -38,7 +38,6 @@ GameObject:
   - component: {fileID: 4314929716865000}
   - component: {fileID: 198490198966189388}
   - component: {fileID: 199863537701889364}
-  - component: {fileID: 114113315649068446}
   m_Layer: 0
   m_Name: smallParticles
   m_TagString: Untagged
@@ -54,6 +53,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4805187811398156}
+  - component: {fileID: 114888090224626692}
   m_Layer: 0
   m_Name: Enemy Explosion
   m_TagString: Untagged
@@ -102,18 +102,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114113315649068446
+--- !u!114 &114888090224626692
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1837576339026372}
+  m_GameObject: {fileID: 1971424577537738}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f22efc4173e403941a95b708ffc72afd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 200
+  lifetime: 2
 --- !u!198 &198490198966189388
 ParticleSystem:
   m_ObjectHideFlags: 1
