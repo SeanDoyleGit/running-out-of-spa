@@ -29,6 +29,7 @@ public class EnemySpawner : MonoBehaviour {
 	}
 
 	public void SpawnEnemy() {
+		if(!player) { return; }
 		Vector3 fwd = player.transform.forward.normalized;
 		Vector3 randPos = fwd * (maxSpawnDistance - minSpawnDistance) + fwd * minSpawnDistance;
 

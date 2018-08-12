@@ -24,6 +24,10 @@ public class HealthController : MonoBehaviour {
 		}
 	}
 
+	public float GetCurrentHealth() {
+		return currentHealth;
+	}
+
 	void OnDestroy() {
 		if(createOnDestroy != null) {
 			Instantiate(createOnDestroy, transform.position, Quaternion.Euler(0,0,0));

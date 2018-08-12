@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 54646595258310900}
   - component: {fileID: 114213617153687628}
   - component: {fileID: 136346847349158782}
+  - component: {fileID: 114597854886716308}
   m_Layer: 0
   m_Name: Shot
   m_TagString: Shot
@@ -100,6 +101,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   targetTag: Enemy
+--- !u!114 &114597854886716308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1028781505639432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86a17fdf4877b2d44a215f5f02717381, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Enemy
+  gameController: {fileID: 0}
 --- !u!136 &136346847349158782
 CapsuleCollider:
   m_ObjectHideFlags: 1
